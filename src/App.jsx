@@ -11,6 +11,7 @@ import Description from "./components/Description";
 import Choose from "./components/Choose";
 import Videos from "./components/Videos";
 import VPS from "./components/VPS";
+import Mission from "./components/Mission";
 const App = () => {
   const [showDropDownMenu, setShowDropDownMenu] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
@@ -130,6 +131,7 @@ const App = () => {
       <VPS />
       <Description />
       <Choose />
+      <Mission />
       <Videos />
     </div>
   );
