@@ -25,26 +25,42 @@ const Hero = () => {
             Book an Appointment
           </button>
         </div>
-        <div className="flex flex-col h-[32rem] w-[50%] gap-5">
+        <div className="flex flex-col h-[32rem] w-[32rem] gap-5">
           <div className="slide-container ">
-            <img src={Image1} className="slide" alt="" />
-            <img src={Image2} className="slide" alt="" />
-            <img src={Image3} className="slide" alt="" />
-            <img src={Image4} className="slide" alt="" />
+            <img
+              src={Image1}
+              className="slide w-[15rem] h-[15rem] md:w-[25rem] md:h-[25rem] "
+              alt=""
+            />
+            <img
+              src={Image2}
+              className="slide w-[15rem] h-[15rem] md:w-[25rem] md:h-[25rem]"
+              alt=""
+            />
+            <img
+              src={Image3}
+              className="slide w-[15rem] h-[15rem] md:w-[25rem] md:h-[25rem]"
+              alt=""
+            />
+            <img
+              src={Image4}
+              className="slide w-[15rem] h-[15rem] md:w-[25rem] md:h-[25rem]"
+              alt=""
+            />
           </div>
         </div>
       </div>
       <div className="flex text-white gap-10 ml-auto">
         <div className="border-r-2 border-white px-6">
-          <p className="text-6xl font-bold">24/7</p>
+          <p className="text-xl md:text-6xl font-bold">24/7</p>
           <p>Online Support</p>
         </div>
         <div className="border-r-2 border-white px-6">
-          <p className="text-6xl font-bold">100+</p>
+          <p className="text-xl md:text-6xl font-bold">100+</p>
           <p>Web Developed & Application</p>
         </div>
         <div>
-          <p className="text-6xl font-bold">5+</p>
+          <p className="text-xl md:text-6xl font-bold">5+</p>
           <p>Year Experience </p>
         </div>
       </div>
