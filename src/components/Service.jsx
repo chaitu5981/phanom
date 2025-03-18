@@ -24,18 +24,18 @@ const Service = () => {
       </div>
       <div className="w-full lg:w-[80%] border-2 border-gray-200 rounded-md relative">
         <Swiper
-          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          autoplay={{ delay: 3000, disableOnInteraction: true }}
           modules={[Navigation, Autoplay]}
           navigation={{ nextEl: ".next-btn", prevEl: ".prev-btn" }} // Connect buttons
         >
-          {data.map((d) => (
+          {data.map((d, i) => (
             <SwiperSlide className="p-4 !flex flex-col gap-9">
               <p className="text-3xl text-[#6c5fd4] font-semibold">{d.title}</p>
               <p>
                 Keep your lawn in top shape without lifting a finger and boost
                 the appearance of your property
               </p>
-              <SubSwiper cardsData={d.items} index={0} />
+              <SubSwiper cardsData={d.items} index={i} />
             </SwiperSlide>
           ))}
         </Swiper>

@@ -19,7 +19,7 @@ const SubSwiper = ({ cardsData, index }) => {
         }
         modules={[Navigation]}
         navigation={{
-          nextEl: `.next-btn-s`,
+          nextEl: `.next-btn${index}`,
           prevEl: `.prev-btn${index}`,
         }}
         breakpoints={{
@@ -41,7 +41,7 @@ const SubSwiper = ({ cardsData, index }) => {
         ))}
       </Swiper>
       <button
-        className={`next-btn-s z-20 absolute right-0 top-1/2 -translate-y-1/2 text-2xl`}
+        className={`next-btn${index} z-20 absolute right-0 top-1/2 -translate-y-1/2 text-2xl`}
       >
         <FaCaretRight />
       </button>
