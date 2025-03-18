@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import thinking from "../assets/images/thinking.png";
+import { Swiper } from "swiper/react";
+import { SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 const items = [
   {
     id: 1,
@@ -45,24 +48,29 @@ const Description = () => {
     return () => clearInterval(t);
   }, []);
   return (
-    <div className="py-10">
-      <div
-        className={`w-[200%] bg-[#6c5fd4] p-10 flex text-white text-3xl  ${
-          index == items.length - 1
-            ? "transition-none"
-            : "transition-transform duration-500"
-        }`}
-        style={{ transform: `translateX(${-index * 12.5}%)` }}
-      >
-        {[...items, ...items].map((i, index) => (
-          <div className="text-3xl pl-8 pr-6 border-r-2 border-white w-[12.5%] transition-transform duration-500 flex-shrink-0">
-            <p>{i.p1}</p>
-            <p>{i.p2}</p>
-          </div>
-        ))}
+    <div className="  gap-6 py-10  w-full">
+      <div className="flex bg-[#6c5fd4] text-white py-6">
+        <Swiper
+          modules={[Autoplay]}
+          autoplay={{ delay: 2000 }}
+          loop
+          breakpoints={{
+            320: { slidesPerView: 1 },
+            640: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+            1280: { slidesPerView: 4 },
+          }}
+        >
+          {[...items, ...items].map((item) => (
+            <SwiperSlide className="text-3xl pl-8 pr-6 border-r-2 border-white">
+              <p>{item.p1}</p>
+              <p>{item.p2}</p>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
-      <div className="flex px-30  gap-6 py-10 h-[30rem]">
-        <div className="w-[50%] flex flex-col gap-10 ">
+      <div className="flex flex-col md:flex-row p-10 ">
+        <div className="w-full md:w-[50%] flex flex-col gap-10 ">
           <p className="text-5xl text-[#6c5fd4] w-[50%]">
             What makes us unique?
           </p>
@@ -79,7 +87,7 @@ const Description = () => {
             Book an Appointment
           </button>
         </div>
-        <div className="w-[50%] overflow-y-auto h-full hide gap-10 flex flex-col px-4">
+        <div className="w-full md:w-[50%] overflow-y-auto h-[30rem] hide gap-10 flex flex-col px-4">
           {items2.map((item) => (
             <div className="flex gap-6 items-center shadow-md p-4 shadow-slate-400">
               <img

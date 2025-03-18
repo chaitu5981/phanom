@@ -12,6 +12,7 @@ import Choose from "./components/Choose";
 import Videos from "./components/Videos";
 import VPS from "./components/VPS";
 import Mission from "./components/Mission";
+import Articles from "./components/Articles";
 const App = () => {
   const [showDropDownMenu, setShowDropDownMenu] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
@@ -25,7 +26,6 @@ const App = () => {
       setShowMenu(false);
     }
   };
-  console.log(showMenu);
   return (
     <div className="" onClick={hideMenu}>
       <div className="flex justify-around flex-row sm:flex-col md:flex-row px-6 relative">
@@ -133,6 +133,7 @@ const App = () => {
       <Choose />
       <Mission />
       <Videos />
+      <Articles />
     </div>
   );
 };
