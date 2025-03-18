@@ -133,7 +133,7 @@ const App = () => {
       <Choose />
       <Mission />
       <Videos />
-      <Articles />
+      {/* <Articles /> */}
     </div>
   );
 };

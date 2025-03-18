@@ -6,7 +6,7 @@ const Mission = () => {
         Empowering businesses with innovation, crafting bespoke solutions,and
         driving industry leadership.
       </p>
-      <div className="flex gap-6">
+      <div className="flex flex-col md:flex-row gap-6">
         <div className="shadow-lg shadow-slate-300  p-20 flex flex-col gap-6 text-xl">
           <p className="text-2xl font-semibold">Innovate</p>
           <p>
@@ -32,7 +32,7 @@ const Mission = () => {
           </p>
         </div>
       </div>
-      <div className="flex gap-6 items-center justify-center">
+      <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
         <p className="text-4xl text-gray-400">Build Skills,connect. </p>
         <input
           type="text"

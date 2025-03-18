@@ -9,7 +9,7 @@ const Videos = () => {
         Real stories, Real impact:Our users share their experience
       </p>
 
-      <div className="flex gap-12 justify-center items-center">
+      <div className="flex flex-col lg:flex-row gap-12 justify-center items-center">
         <video controls width={200} className="rounded-md">
           <source src={cred} type="video/mp4" />
         </video>

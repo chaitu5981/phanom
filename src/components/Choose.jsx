@@ -38,14 +38,14 @@ const Choose = () => {
     return () => clearInterval(t);
   }, []);
   return (
-    <div className="py-10 flex   items-center ">
+    <div className="py-10 flex flex-col gap-6  lg:flex-row  items-center ">
       <div
         style={
           index % 3 == 0
             ? { backgroundColor: "#6084e1" }
             : { backgroundColor: "#d54ae8" }
         }
-        className="w-[30rem] h-[30rem] rounded-full flex justify-center items-center -translate-x-1/2 shadow-[0_0_20px_rgba(0,0,0,0.5)]"
+        className="hidden lg:flex w-[30rem] h-[30rem] rounded-full  justify-center items-center -translate-x-1/2 shadow-[0_0_20px_rgba(0,0,0,0.5)]"
       >
         <div
           style={
@@ -67,10 +67,10 @@ const Choose = () => {
           </div>
         </div>
       </div>
-      <div className="w-[12rem] text-5xl font-bold text-[#a345e4]">
+      <div className=" w-full lg:w-[12rem] text-5xl font-bold text-[#a345e4]">
         <p>Why Choose US</p>
       </div>
-      <div className="overflow-y-hidden h-[11rem] w-[40rem]">
+      <div className="overflow-y-hidden h-[11rem] w-[40rem] self-start lg:self-center">
         <div
           style={{ transform: `translateY(${-index * 17}%)` }}
           className=" flex flex-col gap-10 ml-30 transition-transform duration-500"
