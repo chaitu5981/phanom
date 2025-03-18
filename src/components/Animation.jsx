@@ -10,9 +10,15 @@ const Animation = () => {
               <div
                 key={i}
                 className="service flex flex-col items-center justify-center"
-                style={{
-                  animationDelay: `${i * 6}s`,
-                }}
+                style={
+                  i > 0
+                    ? {
+                        animationDelay: `${4.5 + (i - 1) * 6}s`,
+                      }
+                    : {
+                        animationDelay: "-3s",
+                      }
+                }
               >
                 <img
                   src={s.image}

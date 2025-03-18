@@ -5,7 +5,9 @@ import "swiper/css/navigation";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import SubSwiper from "./SubSwiper";
-import { digital } from "../assets/data/services";
+import { data } from "../assets/data/services";
+import { Autoplay } from "swiper/modules";
+
 const Service = () => {
   return (
     <div className="flex flex-col lg:flex-row px-20 py-16 gap-4 ">
@@ -22,36 +24,20 @@ const Service = () => {
       </div>
       <div className="w-full lg:w-[80%] border-2 border-gray-200 rounded-md relative">
         <Swiper
-          loop
-          autoplay={{ delay: 3000 }}
-          modules={[Navigation]}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          modules={[Navigation, Autoplay]}
           navigation={{ nextEl: ".next-btn", prevEl: ".prev-btn" }} // Connect buttons
         >
-          <SwiperSlide className="p-4 !flex flex-col gap-9">
-            <p className="text-3xl text-[#6c5fd4] font-semibold">
-              Digital Marketing
-            </p>
-            <p>
-              Keep your lawn in top shape without lifting a finger and boost the
-              appearance of your property
-            </p>
-            <SubSwiper cardsData={digital} index={0} />
-          </SwiperSlide>
-          <SwiperSlide className="p-4 !flex flex-col gap-9">
-            <p className="text-3xl text-[#6c5fd4] font-semibold">
-              Design & Development
-            </p>
-          </SwiperSlide>
-          <SwiperSlide className="p-4 !flex flex-col gap-9">
-            <p className="text-3xl text-[#6c5fd4] font-semibold">
-              Animation & Graphics
-            </p>
-          </SwiperSlide>
-          <SwiperSlide className="p-4 !flex flex-col gap-9">
-            <p className="text-3xl text-[#6c5fd4] font-semibold">
-              E-commerce Solutions
-            </p>
-          </SwiperSlide>
+          {data.map((d) => (
+            <SwiperSlide className="p-4 !flex flex-col gap-9">
+              <p className="text-3xl text-[#6c5fd4] font-semibold">{d.title}</p>
+              <p>
+                Keep your lawn in top shape without lifting a finger and boost
+                the appearance of your property
+              </p>
+              <SubSwiper cardsData={d.items} index={0} />
+            </SwiperSlide>
+          ))}
         </Swiper>
 
         {/* Custom Navigation Buttons (Bottom Right) */}

@@ -46,3 +46,11 @@
     opacity: 0;
   }
 }
+
+.hide::-webkit-scrollbar {
+  display: none;
+}
+
+.hide {
+  scrollbar-width: 0;
+}

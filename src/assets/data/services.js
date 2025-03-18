@@ -43,57 +43,95 @@ export const services = [
   },
 ];
 
-export const digital = [
+export const data = [
   {
-    title: "Seo",
-    caption: "Search Engine Optimization",
-    bgColor: "#6366c7",
-    services: "Technical SEO | On-Page SEO | Off-page SEO | Local SEO",
+    title: "Digital Marketing",
+    items: [
+      {
+        title: "Seo",
+        caption: "Search Engine Optimization",
+        bgColor: "#6366c7",
+        services: "Technical SEO | On-Page SEO | Off-page SEO | Local SEO",
+      },
+      {
+        title: "Social",
+        caption: "Media Marketing",
+        bgColor: "#324d7a",
+        services: "Facebook | Instagram | X | Linkedin",
+      },
+      {
+        title: "PPC",
+        caption: "Pay Per Click",
+        bgColor: "#1e3047",
+        services:
+          "Search Ads | Display Ads | Demand Gen PMAx Ads | Video Ads | Lead Generation",
+      },
+      {
+        title: "YouTube",
+        caption: "Marketing",
+        bgColor: "#ff3c69",
+        services:
+          "Channel SEO | Skip Non-skip able Ads | Increase Subscribers & Views ",
+      },
+      {
+        title: "Seo",
+        caption: "Search Engine Optimization",
+        bgColor: "#6366c7",
+        services: "Technical SEO | On-Page SEO | Off-page SEO | Local SEO",
+      },
+      {
+        title: "Social",
+        caption: "Media Marketing",
+        bgColor: "#324d7a",
+        services: "Facebook | Instagram | X | Linkedin",
+      },
+      {
+        title: "PPC",
+        caption: "Pay Per Click",
+        bgColor: "#1e3047",
+        services:
+          "Search Ads | Display Ads | Demand Gen PMAx Ads | Video Ads | Lead Generation",
+      },
+      {
+        title: "YouTube",
+        caption: "Marketing",
+        bgColor: "#ff3c69",
+        services:
+          "Channel SEO | Skip Non-skip able Ads | Increase Subscribers & Views ",
+      },
+    ],
   },
   {
-    title: "Social",
-    caption: "Media Marketing",
-    bgColor: "#324d7a",
-    services: "Facebook | Instagram | X | Linkedin",
-  },
-  {
-    title: "PPC",
-    caption: "Pay Per Click",
-    bgColor: "#1e3047",
-    services:
-      "Search Ads | Display Ads | Demand Gen PMAx Ads | Video Ads | Lead Generation",
-  },
-  {
-    title: "YouTube",
-    caption: "Marketing",
-    bgColor: "#ff3c69",
-    services:
-      "Channel SEO | Skip Non-skip able Ads | Increase Subscribers & Views ",
-  },
-  {
-    title: "Seo",
-    caption: "Search Engine Optimization",
-    bgColor: "#6366c7",
-    services: "Technical SEO | On-Page SEO | Off-page SEO | Local SEO",
-  },
-  {
-    title: "Social",
-    caption: "Media Marketing",
-    bgColor: "#324d7a",
-    services: "Facebook | Instagram | X | Linkedin",
-  },
-  {
-    title: "PPC",
-    caption: "Pay Per Click",
-    bgColor: "#1e3047",
-    services:
-      "Search Ads | Display Ads | Demand Gen PMAx Ads | Video Ads | Lead Generation",
-  },
-  {
-    title: "YouTube",
-    caption: "Marketing",
-    bgColor: "#ff3c69",
-    services:
-      "Channel SEO | Skip Non-skip able Ads | Increase Subscribers & Views ",
+    title: "Animation & Graphics",
+    items: [
+      {
+        title: "Video",
+        caption: "Marketing",
+        bgColor: "lightblue",
+        services:
+          "Channel SEO | Skip-Non Skip able Ads | Increase Subscribers & Views",
+      },
+      {
+        title: "Branding",
+        caption: "Marketing",
+        bgColor: "green",
+        services:
+          "Channel SEO | Skip-Non Skip able Ads | Increase Subscribers & Views",
+      },
+      {
+        title: "Packaging",
+        caption: "& Labelling",
+        bgColor: "red",
+        services:
+          "Channel SEO | Skip-Non Skip able Ads | Increase Subscribers & Views",
+      },
+      {
+        title: "Graphic",
+        caption: "Design",
+        bgColor: "blue",
+        services:
+          "Channel SEO | Skip-Non Skip able Ads | Increase Subscribers & Views",
+      },
+    ],
   },
 ];

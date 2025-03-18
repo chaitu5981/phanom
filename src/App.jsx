@@ -7,6 +7,10 @@ import Logos from "./components/Logos";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 import Hero from "./components/Hero";
+import Description from "./components/Description";
+import Choose from "./components/Choose";
+import Videos from "./components/Videos";
+import VPS from "./components/VPS";
 const App = () => {
   const [showDropDownMenu, setShowDropDownMenu] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
@@ -123,6 +127,10 @@ const App = () => {
       <Logos />
       <Animation />
       <Service />
+      <VPS />
+      <Description />
+      <Choose />
+      <Videos />
     </div>
   );
 };
