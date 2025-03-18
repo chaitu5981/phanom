@@ -13,6 +13,7 @@ import Videos from "./components/Videos";
 import VPS from "./components/VPS";
 import Mission from "./components/Mission";
 import Articles from "./components/Articles";
+import Footer from "./components/Footer";
 const App = () => {
   const [showDropDownMenu, setShowDropDownMenu] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
@@ -134,6 +135,7 @@ const App = () => {
       <Mission />
       <Videos />
       <Articles />
+      <Footer />
     </div>
   );
 };

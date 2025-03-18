@@ -48,39 +48,43 @@ const Articles = () => {
         Take a look at our company's Blog Series or read some professional
         gardening insights and news.
       </p>
-      <div className="flex px-16 justify-between"></div>
-      <Swiper
-        modules={[Pagination]}
-        breakpoints={{
-          320: { slidesPerView: 1 },
-          640: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-        }}
-      >
-        {articles.map((article, i) => (
-          <SwiperSlide
-            key={i}
-            className="flex flex-col gap-2 items-start w-[22rem]"
-          >
-            <img
-              src={article.image}
-              className="w-full  h-[13rem] object-cover rounded-xl"
-              alt=""
-            />
-            <p>{article.caption}</p>
-            <p className="text-2xl">{article.title}</p>
-            <div className="flex gap-2 items-center">
-              <TiMessage className="text-2xl" />
-              <p>{article.comments}</p>
-              <MdOutlineRemoveRedEye className="text-2xl" />
-              <p>{article.views}</p>
-              <FaRegCalendarAlt />
-              <p className="">{article.monthsAgo}</p>
-            </div>
-            <p className="">{article.desc}</p>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div className="w-full px-16">
+        <Swiper
+          modules={[Pagination]}
+          pagination={{ clickable: true }}
+          spaceBetween={30}
+          slidesPerView={3}
+          breakpoints={{
+            320: { slidesPerView: 1 },
+            640: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+        >
+          {articles.map((article, i) => (
+            <SwiperSlide
+              key={i}
+              className="flex flex-col gap-2 items-start w-[22rem]"
+            >
+              <img
+                src={article.image}
+                className="w-full  h-[13rem] object-cover rounded-xl"
+                alt=""
+              />
+              <p>{article.caption}</p>
+              <p className="text-2xl">{article.title}</p>
+              <div className="flex gap-2 items-center">
+                <TiMessage className="text-2xl" />
+                <p>{article.comments}</p>
+                <MdOutlineRemoveRedEye className="text-2xl" />
+                <p>{article.views}</p>
+                <FaRegCalendarAlt />
+                <p className="">{article.monthsAgo}</p>
+              </div>
+              <p className="">{article.desc}</p>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 };
