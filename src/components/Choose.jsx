@@ -73,7 +73,7 @@ const Choose = () => {
       <div className="overflow-y-hidden h-[11rem] w-[40rem] self-start lg:self-center">
         <div
           style={{ transform: `translateY(${-index * 17}%)` }}
-          className=" flex flex-col gap-10 ml-30 transition-transform duration-500"
+          className=" flex flex-col gap-10 ml-5 lg:ml-30 transition-transform duration-500"
         >
           {items.map((item) => (
             <div>

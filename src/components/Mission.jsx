@@ -39,7 +39,7 @@ const Mission = () => {
           name=""
           id=""
           placeholder="Enter your Email"
-          className="bg-gray-300 rounded-md w-[40rem] h-[4rem] p-3"
+          className="bg-gray-300 rounded-md w-[20rem] md:w-[40rem] h-[4rem] p-3"
         />
         <button className="h-[4rem]  w-[10rem]  px-4 py-2 rounded-md bg-[#715de3] text-2xl text-white">
           Send
