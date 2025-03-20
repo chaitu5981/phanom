@@ -50,7 +50,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="flex text-white gap-10 md:ml-auto">
+      <div className="flex text-white gap-10 self-center md:self-end">
         <div className="border-r-2 border-white px-6">
           <p className="text-xl md:text-6xl font-bold">24/7</p>
           <p>Online Support</p>
