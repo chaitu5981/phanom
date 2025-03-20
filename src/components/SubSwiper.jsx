@@ -14,9 +14,6 @@ const SubSwiper = ({ cardsData, index }) => {
       </button>
       <Swiper
         loop
-        onSwiper={(swiper) =>
-          console.log("Next button selector:", swiper.navigation.nextEl)
-        }
         modules={[Navigation]}
         navigation={{
           nextEl: `.next-btn${index}`,

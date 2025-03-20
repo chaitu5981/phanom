@@ -25,7 +25,7 @@ const Animation = () => {
                   alt=""
                   className="w-[6rem] h-[6rem] object-contain"
                 />
-                <p className="text-2xl  md:text-4xl font-semibold text-center">
+                <p className="text-md  md:text-4xl font-semibold text-center">
                   {s.title}
                 </p>
                 <p className="text-center">{s.text}</p>
